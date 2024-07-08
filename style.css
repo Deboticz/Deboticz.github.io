@@ -208,8 +208,9 @@ header .info-text .scroll::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   flex: 1;
-  min-width: 350px;
+  min-width: 220px;
 }
 
 #features .feature-cards .card .info i {
@@ -251,6 +252,14 @@ header .info-text .scroll::before {
 }
 
 @media screen and (max-width: 720px) {
+  .scroll-top {
+    bottom: 60px;
+  }
+
+  .CFooter {
+    font-size: 12px;
+  }
+
   header .info-text h1 {
     text-align: center;
     font-size: 4rem;
