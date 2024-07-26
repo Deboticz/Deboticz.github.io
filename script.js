@@ -1,3 +1,30 @@
+function openMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("open");
+
+  const icon = document.getElementById("menuButton");
+  const old = document.getElementById("old");
+
+  old.style.display = "none";
+
+  if (nav.classList.contains("open")) {
+    icon.classList.remove("ri-menu-fill");
+    icon.classList.add("ri-close-fill");
+  } else {
+    icon.classList.remove("ri-close-fill");
+    icon.classList.add("ri-menu-fill");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", async function () {
+  setTimeout(() => {
+    document.querySelector(".all-load").style.display = "none";
+    document.querySelector(".loading-footer").style.display = "none";
+    document.querySelector(".all").style.display = "block";
+    document.body.classList.add("fade-in");
+  }, 3000);
+});
+
 function scrollToElement(elementSelector, instance = 0) {
   const elements = document.querySelectorAll(elementSelector);
   if (elements.length > instance) {
@@ -5,102 +32,36 @@ function scrollToElement(elementSelector, instance = 0) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const link = document.getElementById("scrollID");
+function offMenü() {
+  const n = document.querySelector("nav");
+  n.classList.toggle("open");
 
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    scrollToElement("#about");
-  });
-});
-
-particlesJS("particles", {
-  particles: {
-    number: {
-      value: 100,
-      density: {
-        enable: true,
-        value_area: 800,
-      },
-    },
-    color: {
-      value: "#ffffff",
-    },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "#000000",
-      },
-    },
-    opacity: {
-      value: 0.8,
-      random: true,
-      animation: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0,
-        sync: false,
-      },
-    },
-    size: {
-      value: 3,
-      random: true,
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 1,
-    },
-    move: {
-      enable: true,
-      speed: 2,
-      direction: "none",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-    },
-  },
-  interactivity: {
-    detectsOn: "canvas",
-    events: {
-      onHover: {
-        enable: true,
-        mode: "push",
-      },
-      onClick: {
-        enable: true,
-        mode: "push",
-      },
-      resize: true,
-    },
-    modes: {
-      repulse: {
-        distance: 100,
-        duration: 0.4,
-      },
-      push: {
-        particles_nb: 4,
-      },
-    },
-  },
-  retina_detect: true,
-});
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-  });
+  const i = document.querySelector(".ri-close-fill");
+  i.classList.remove("ri-close-fill");
+  const o = document.getElementById("old");
+  o.style.display = "block";
 }
 
-window.addEventListener("scroll", function () {
-  var scrollTopButton = document.querySelector(".scroll-top");
-  if (this.window.pageYOffset > 200) {
-    scrollTopButton.style.display = "block";
-  } else {
-    scrollTopButton.style.display = "none";
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const link1 = document.getElementById("informations");
+  const link2 = document.getElementById("hostinginfos");
+  const link3 = document.getElementById("reviews");
+
+  link1.addEventListener("click", (event) => {
+    event.preventDefault();
+    scrollToElement("#skills");
+    offMenü();
+  });
+
+  link2.addEventListener("click", (event) => {
+    event.preventDefault();
+    scrollToElement("#portfolio");
+    offMenü();
+  });
+
+  link3.addEventListener("click", (event) => {
+    event.preventDefault();
+    scrollToElement(".feedback");
+    offMenü();
+  });
 });
