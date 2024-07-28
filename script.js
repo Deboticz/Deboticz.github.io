@@ -116,7 +116,3 @@ document.addEventListener("keydown", function (event) {
     event.preventDefault();
   }
 });
-<<<<<<< HEAD
-=======
-
->>>>>>> 9c9e26e1320712d8cca1ffe11b30fa41918b25c1
