@@ -113,29 +113,3 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-var options = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.8,
-};
-
-var observer = new IntersectionObserver(function (entries, observer) {
-  entries.forEach(function (entry) {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("active");
-      observer.unobserve(entry.target);
-    }
-  });
-}, options);
-
-var targets = document.querySelectorAll(".pricing .card");
-targets.forEach(function (target) {
-  observer.observe(target);
-});
-
-//e
-
-var targets = document.querySelectorAll(".card");
-targets.forEach(function (target) {
-  observer.observe(target);
-});
