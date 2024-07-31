@@ -1,7 +1,3 @@
-document.addEventListener("contextmenu", function (event) {
-  event.preventDefault();
-});
-
 (function () {
   function preventDevTools() {
     if (window.devtools.open) {
@@ -24,6 +20,12 @@ document.addEventListener("contextmenu", function (event) {
     return;
   })();
 })();
+
+
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
+
 
 document.addEventListener("keydown", function (event) {
   if (event.key == "F12") {
