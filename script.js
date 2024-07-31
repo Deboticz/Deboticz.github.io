@@ -21,11 +21,9 @@
   })();
 })();
 
-
 document.addEventListener("contextmenu", function (event) {
   event.preventDefault();
 });
-
 
 document.addEventListener("keydown", function (event) {
   if (event.key == "F12") {
@@ -118,9 +116,3 @@ document.addEventListener("DOMContentLoaded", function () {
     offMenü();
   });
 });
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 9c9e26e1320712d8cca1ffe11b30fa41918b25c1
