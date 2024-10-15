@@ -58,7 +58,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+/* document.getElementById("year").textContent = new Date().getFullYear(); */
 
 function openMenu() {
   const nav = document.querySelector("nav");
