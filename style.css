@@ -160,6 +160,22 @@ nav button#menuButton {
   background-color: #3bee7a;
 }
 
+.main .notfoundimg img {
+  border: 20px rgb(41, 45, 69);
+  border-style: solid;
+  border-radius: 180px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: cover;
+  margin-right: 160px;
+  margin-left: 160px;
+    width: 600px;
+}
+
+
 .main .right img {
   border: 20px rgb(41, 45, 69);
   border-style: solid;
@@ -459,6 +475,11 @@ nav ul li a {
 
   .main .left p {
     font-size: 18px;
+  }
+
+  .main .notfoundimg img {
+    margin-left: 160px;
+    width: 320px;
   }
 
   .main .right img {
