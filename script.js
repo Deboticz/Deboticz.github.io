@@ -58,7 +58,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
 
 function openMenu() {
   const nav = document.querySelector("nav");
@@ -96,6 +95,11 @@ function offMenü() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  setInterval(() => {
+    document.getElementById("year").textContent = new Date().getFullYear();
+  }, 2000);
+
   const link1 = document.getElementById("informations");
   const link2 = document.getElementById("hostinginfos");
   const link3 = document.getElementById("reviews");
