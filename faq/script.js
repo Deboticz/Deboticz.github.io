@@ -1,78 +1,4 @@
-
-//Snowfall
-
-const canvas = document.getElementById("snowfall");
-const ctx = canvas.getContext("2d");
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-let snowflakes = [];
-
-class Snowflake {
-    constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.radius = Math.random() * 4 + 1;
-        this.speed = Math.random() * 1 + 0.5;
-        this.wind = Math.random() * 0.5 - 0.25;
-    }
-
-    update() {
-        this.y += this.speed;
-        this.x += this.wind;
-
-        if (this.y > canvas.height) {
-            this.y = 0;
-            this.x = Math.random() * canvas.width;
-        }
-        if (this.x > canvas.width) {
-            this.x = 0;
-        } else if (this.x < 0) {
-            this.x = canvas.width;
-        }
-    }
-
-    draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "white";
-        ctx.fill();
-        ctx.closePath();
-    }
-}
-
-function createSnowflakes() {
-  console.warn('test2')
-    for (let i = 0; i < 150; i++) {
-        snowflakes.push(new Snowflake());
-    }
-}
-
-function animateSnowfall() {
-  console.warn('test2')
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    snowflakes.forEach((snowflake) => {
-        snowflake.update();
-        snowflake.draw();
-    });
-
-    requestAnimationFrame(animateSnowfall);
-}
-
-window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    snowflakes = [];
-    createSnowflakes();
-});
-
-createSnowflakes();
-animateSnowfall();
-
-
-  (function () {
+(function () {
     function preventDevTools() {
       if (window.devtools.open) {
         window.location.reload();
@@ -133,8 +59,6 @@ animateSnowfall();
   });
 
 
-
-
 document.addEventListener("click", (e) => {
   const dropdowns = document.querySelectorAll(".dropdown");
   dropdowns.forEach((dropdown) => {
@@ -168,7 +92,6 @@ buttons.forEach((button) => {
       }
     });
 
-
     if (icon.classList.contains("ri-arrow-drop-down-line")) {
       icon.classList.remove("ri-arrow-drop-down-line");
       icon.classList.add("ri-arrow-drop-up-line");
@@ -180,11 +103,9 @@ buttons.forEach((button) => {
 });
 
 document.addEventListener("click", function (event) {
-
   buttons.forEach((button) => {
     const icon = button.querySelector("i");
     if (!button.contains(event.target)) {
-
       icon.classList.remove("ri-arrow-drop-up-line");
       icon.classList.add("ri-arrow-drop-down-line");
       if (window.matchMedia("(max-width: 992px)").matches) {
@@ -229,7 +150,6 @@ function toggleDropdown(id) {
     }
   });
 }
-
 
 const searchBar = document.querySelector(".search-bar");
 
@@ -285,7 +205,6 @@ sortSelect.addEventListener("change", (e) => {
 
 function toggleFaq(button) {
   const faqItem = button.closest(".faq-item");
-  const content = faqItem.querySelector(".faq-content");
   const allFaqItems = document.querySelectorAll(".faq-item");
 
   allFaqItems.forEach((item) => {
@@ -296,11 +215,6 @@ function toggleFaq(button) {
   });
 
   faqItem.classList.toggle("active");
-  if (faqItem.classList.contains("active")) {
-    content.style.maxHeight = content.scrollHeight + "px";
-  } else {
-    content.style.maxHeight = null;
-  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -309,6 +223,3 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleFaq(firstFaqButton);
   }
 });
-
-
-

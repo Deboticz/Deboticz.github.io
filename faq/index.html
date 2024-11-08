@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+        />
+        <link rel="icon" href="/images/logo.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/site.webmanifest" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Deboticz | FAQ</title>
+    
+        <meta content="Deboticz | Hosting" property="og:title" />
+        <meta content="The Best Hosting Service 🌐" property="og:description" />
+        <meta content="https://deboticz.online" property="og:url" />
+        <meta
+          content="https://Deboticz.github.io/images/logo.png"
+          property="og:image"
+        />
+        <meta content="#62c8a9" data-react-helmet="true" name="theme-color" />
+      </head>
+<body>
+
+    <nav class="navbar">
+        <a href="https://deboticz.online" target="_blank" class="logo">
+            <img src="/images/logo.png" alt="">
+            Deboticz | FAQ
+            
+        </a>
+        <button class="open-menu" id="activeIcon"><i class="ri-menu-line"></i></button>
+        <div class="nav-links">
+        
+            <div class="dropdown">
+                <button class="dropdown-button" id="more" onclick="toggleDropdown('more')">
+                    More
+                    <span id="ico"><i class="ri-arrow-drop-down-line"></i></span>
+                </button>
+                <div class="dropdown-content" id="more-dropdown">
+                    <a href="https://dash.deboticz.online/ticket" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M19.2914 5.99994H20.0002C20.5525 5.99994 21.0002 6.44766 21.0002 6.99994V13.9999C21.0002 14.5522 20.5525 14.9999 20.0002 14.9999H18.0002L13.8319 9.16427C13.3345 8.46797 12.4493 8.16522 11.6297 8.41109L9.14444 9.15668C8.43971 9.3681 7.6758 9.17551 7.15553 8.65524L6.86277 8.36247C6.41655 7.91626 6.49011 7.17336 7.01517 6.82332L12.4162 3.22262C13.0752 2.78333 13.9312 2.77422 14.5994 3.1994L18.7546 5.8436C18.915 5.94571 19.1013 5.99994 19.2914 5.99994ZM5.02708 14.2947L3.41132 15.7085C2.93991 16.1209 2.95945 16.8603 3.45201 17.2474L8.59277 21.2865C9.07284 21.6637 9.77592 21.5264 10.0788 20.9963L10.7827 19.7645C11.2127 19.012 11.1091 18.0682 10.5261 17.4269L7.82397 14.4545C7.09091 13.6481 5.84722 13.5771 5.02708 14.2947ZM7.04557 5H3C2.44772 5 2 5.44772 2 6V13.5158C2 13.9242 2.12475 14.3173 2.35019 14.6464C2.3741 14.6238 2.39856 14.6015 2.42357 14.5796L4.03933 13.1658C5.47457 11.91 7.65103 12.0343 8.93388 13.4455L11.6361 16.4179C12.6563 17.5401 12.8376 19.1918 12.0851 20.5087L11.4308 21.6538C11.9937 21.8671 12.635 21.819 13.169 21.4986L17.5782 18.8531C18.0786 18.5528 18.2166 17.8896 17.8776 17.4146L12.6109 10.0361C12.4865 9.86205 12.2652 9.78636 12.0603 9.84783L9.57505 10.5934C8.34176 10.9634 7.00492 10.6264 6.09446 9.7159L5.80169 9.42313C4.68615 8.30759 4.87005 6.45035 6.18271 5.57524L7.04557 5Z"></path>
+                          </svg>
+                          
+                        Support (Ticket)
+                    </a>
+                    <a href="https://deboticz.online/" target="_blank">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg>
+                        Main-Site
+                    </a>
+                    <a href="https://dash.deboticz.online/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11H19V5H5V11ZM21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20C20.5523 3 21 3.44772 21 4ZM19 13H5V19H19V13ZM7 15H10V17H7V15ZM7 7H10V9H7V7Z"></path></svg>
+                        Dashboard
+                    </a>
+
+                    <a href="https://panel.deboticz.online/" target="_blank">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                        Server-Panel
+                    </a>
+                    <a href="https://status.deboticz.online/" target="_blank">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                        Status Page
+                    </a>
+                    <a href="https://deboticz.online/minecraft" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M17.4563 3L20.9991 3.00335L21.001 6.52648L15.5341 11.992L18.3624 14.8207L19.7772 13.4071L21.1915 14.8213L18.7166 17.2962L21.545 20.1246L20.1308 21.5388L17.3024 18.7104L14.8275 21.1853L13.4133 19.7711L14.8269 18.3562L11.9981 15.528L9.1703 18.3558L10.5849 19.7711L9.17064 21.1853L6.69614 18.71L3.86734 21.5388L2.45312 20.1246L5.28192 17.2958L2.80668 14.8213L4.22089 13.4071L5.63477 14.8202L8.46212 11.992L3.00181 6.53118L2.99907 3L6.54506 3.00335L11.9981 8.457L17.4563 3ZM9.87612 13.406L7.04807 16.234L7.75607 16.941L10.5831 14.113L9.87612 13.406ZM19.0001 5.001H18.2831L13.4121 9.87L14.1191 10.577L19.0001 5.698V5.001ZM5.00007 5.001V5.701L16.2411 16.942L16.9482 16.2349L5.71507 5.002L5.00007 5.001Z"></path></svg>
+                        Minecraft-Service
+                    </a>
+                    <br>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11 15V17H13V15H11ZM13 13.3551C14.4457 12.9248 15.5 11.5855 15.5 10C15.5 8.067 13.933 6.5 12 6.5C10.302 6.5 8.88637 7.70919 8.56731 9.31346L10.5288 9.70577C10.6656 9.01823 11.2723 8.5 12 8.5C12.8284 8.5 13.5 9.17157 13.5 10C13.5 10.8284 12.8284 11.5 12 11.5C11.4477 11.5 11 11.9477 11 12.5V14H13V13.3551Z"></path></svg>
+                        MORE SOON !
+                    </a>
+                    <br>
+                    <br>
+                    <a id="close-btn" class="close-btn"><i class="ri-close-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="window.open('https://discord.deboticz.online/', '_blank')" id="btn-rest" class="btn btn-primary"><i class="ri-discord-fill"></i></button>
+        </div>
+    </nav>
+
+    <header class="services-header">
+        <h1>Deboticz | FAQ</h1>
+        <h3>Here you can find the <span>MOAST FAQ's</span> about Deboticz | Hosting</h3>
+    </header>
+
+
+
+
+
+
+    <section class="faq-section" style="padding: 4rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-400 mb-8">Got questions? Check out these FAQs from our latest customers. If you need further assistance, reach out to our support team.</p>
+
+        <div class="space-y-4">
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>How does monthly hosting work?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    To purchase our monthly plans, you have to buy paid credits. With these, you can buy paid servers.
+                </div>
+            </div>
+
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>What is your refund policy?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    We are not have a refund policy !</a>
+                </div>
+            </div>
+
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>Offers Deboticz | Hosting free servers?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    No, we do not offer free servers.
+                </div>
+            </div>
+
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>How do I cancel my server?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    If you want to cancel your server, you can do so by contacting us via <a href="https://dash.deboticz.online/ticket" target="_blank">➡️ Ticket ⬅️.</a>
+                </div>
+            </div>
+
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>What payment methods do you accept?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    We accept PayPal, Credit Cards and Paysafecard's.
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="/images/logo.png">
+                <a href="https://deboticz.online" target="_blank">Deboticz Hosting</a>
+            </div>
+            <div class="social-links">
+                <a href="https://deboticz.online/discord"><i class="ri-discord-fill"></i></i></a>
+                <a><i class="ri-instagram-line"></i></a>
+                <a><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>
+                All Rights Reserved. © 2023 - <span id="year"></span> Build by Robotic Germany ✠
+            </p>
+            <div class="links">
+                <a href="https://dash.deboticz.online/privacy">Privacy Policy</a>
+                <a href="https://dash.deboticz.online/tos">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
