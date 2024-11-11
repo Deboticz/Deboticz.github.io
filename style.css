@@ -722,6 +722,8 @@ button.doc:active {
     gap: 14px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 120%;
+    margin-left: -30px;
   }
 
   .feedback .customers .item {
