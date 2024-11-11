@@ -550,6 +550,7 @@ button.doc {
 }
 
 button.doc:hover {
+  cursor: pointer;
   background: #3bee7a;
   box-shadow: 0 0 30px 5px #000;
   -webkit-transition: all 0.2s ease-out;
