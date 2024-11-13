@@ -43,14 +43,12 @@ class Snowflake {
 }
 
 function createSnowflakes() {
-  console.warn('test2')
     for (let i = 0; i < 150; i++) {
         snowflakes.push(new Snowflake());
     }
 }
 
 function animateSnowfall() {
-  console.warn('test2')
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     snowflakes.forEach((snowflake) => {
@@ -309,6 +307,3 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleFaq(firstFaqButton);
   }
 });
-
-
-
