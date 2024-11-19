@@ -113,6 +113,10 @@
     <section class="faq-section" style="padding: 4rem 2rem; max-width: 1200px; margin: 0 auto;">
         <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
         <p class="text-gray-400 mb-8">Got questions? Check out these FAQs from our latest customers. If you need further assistance, reach out to our support team.</p>
+        <br>
+        <br>
+        <h3 class="faq-title">Gerneal Questions</h3>
+
 
         <div class="space-y-4">
             <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
@@ -123,7 +127,8 @@
                     </svg>
                 </button>
                 <div class="faq-content">
-                    To purchase our monthly plans, you have to buy paid credits. With these, you can buy paid servers.
+                    <p class="faq-txt">To purchase our monthly plans, you have to buy paid credits. With these, you can buy paid servers.</p>
+                    <br>
                 </div>
             </div>
 
@@ -135,7 +140,8 @@
                     </svg>
                 </button>
                 <div class="faq-content">
-                    We are not have a refund policy !</a>
+                    <p class="faq-txt">We are not have a refund policy !</p>
+                    <br>
                 </div>
             </div>
 
@@ -147,7 +153,8 @@
                     </svg>
                 </button>
                 <div class="faq-content">
-                    No, we do not offer free servers.
+                    <p class="faq-txt">No, we do not offer free servers !</p>
+                    <br>
                 </div>
             </div>
 
@@ -159,7 +166,8 @@
                     </svg>
                 </button>
                 <div class="faq-content">
-                    If you want to cancel your server, you can do so by contacting us via <a href="https://dash.deboticz.online/ticket" target="_blank">➡️ Ticket ⬅️.</a>
+                    <p class="faq-txt">If you want to cancel your server, you can do so by contacting us via <a href="https://dash.deboticz.online/ticket" target="_blank">➡️ Ticket ⬅️.</a></p>
+                    <br>
                 </div>
             </div>
 
@@ -171,7 +179,140 @@
                     </svg>
                 </button>
                 <div class="faq-content">
-                    We accept PayPal, Credit Cards and Paysafecard's.
+                    <p class="faq-txt">We accept PayPal, Credit Cards and Paysafecard's.</p>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h3 class="faq-title">Server Questions</h3>
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>How I can activate the auto-backup system?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    <p class="faq-txt" >1) Go to the "SCHEDULES" tab.</p>
+                    <p class="faq-txt" >2) And create a new schedule.</p>
+                    <br>
+                    <br>
+                    <img class="faq-img" src="images/schedule.png">
+                    <br>
+                    <br>
+                    <br>
+                    <p class="faq-txt" >3) After that click the new schedule.</p>
+                    <p class="faq-txt">4) Then select "NEW TASK".</p>
+                    <br>
+                    <br>
+                    <img class="faq-img" src="images/backup.png">
+                    <br>
+                    <p class="faq-txt-green"><i class="ri-checkbox-circle-line"></i>Now Select "CREATE BACKUP" and after that you DONE.</p>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>How I can add a sub-user to my server?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    <p class="faq-txt" >1) Go to the "USERS" tab.</p>
+                    <p class="faq-txt" >2) And click "INVITE USER" button.</p>
+                    <p class="faq-txt" >3)Then select which rights the sub-user should have.</p>
+                    <br>
+                    <br>
+                    <img class="faq-img" src="images/invite-user.png">
+                    <br>
+                    <br>
+                    <p class="faq-txt">4) Then click AGAIN the "INVITE USER" button.</p>
+                    <br>
+                    <br>
+                    <img class="faq-img" src="images/user-invited.png">
+                    <br>
+                    <p class="faq-txt-green"><i class="ri-checkbox-circle-line"></i>Now YOUR server has a sub-user.</p>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <h3 class="faq-title">Minecaft Questions</h3>
+
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>How I can change the version of my minecaft server?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    <p class="faq-txt" >1) Go to the "STARTUP" tab.</p>
+                    <p class="faq-txt" >2) Select your Minecaft version, e.g 1.20.4</p>
+                    <br>
+                    <br>
+                    <img class="faq-img" src="images/version.png">
+                    <br>
+                    <br>
+                    <br>
+                    <p class="faq-txt" >3) Go to the "SETTINGS" tab.</p>
+                    <p class="faq-txt">4) Click on "Reinstall".</p>
+                    <p class="faq-txt-red"><i class="ri-information-line"></i> Note: ALL DATA WILL BE DELETED!</p>
+                    <br>
+                    <br>
+                    <img class="faq-img" src="images/reinstall.png">
+                    <br>
+                    <p class="faq-txt-green"><i class="ri-checkbox-circle-line"></i> Restart your server and wait for the server to started, after that you DONE.</p>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>How I can find the MOD folder in my server?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    <p class="faq-txt" >1) Go to the "FILES" tab.</p>
+                    <p class="faq-txt" >2) The MOD folder should be there</p>
+                    <br>
+                    <br>
+                    <img class="faq-img" src="images/mod.png">
+                    <br>
+                    <p class="faq-txt-orange"><i class="ri-information-line"></i> The MOD folder is only visible on the Fabric, Forge and Sponge Minecraft servers</p>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+
+            <div class="faq-item bg-card-bg rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                    <span>How I can find the PLUGINS folder in my server?</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content">
+                    <p class="faq-txt" >1) Go to the "FILES" tab.</p>
+                    <p class="faq-txt" >2) The PLUGINS folder should be there</p>
+                    <br>
+                    <br>
+                    <img class="faq-img" src="images/plugins.png">
+                    <br>
+                    <p class="faq-txt-orange"><i class="ri-information-line"></i> The PLUGINS folder is only visible on the Paper, Bungeecord, Bedrock (Nukkit) and Purpur Minecraft servers</p>
+                    <br>
+                    <br>
+
                 </div>
             </div>
 

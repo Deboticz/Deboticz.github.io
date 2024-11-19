@@ -16,6 +16,11 @@ h2 {
   color: #fff;
 }
 
+.faq-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 h5 {
   color: #fff;
 }
@@ -29,7 +34,21 @@ a {
 }
 
 span {
+  font-size: 18px;
   color: #fff;
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: #36d16d;
+}
+
+#ico {
+  text-decoration: unset;
+  text-underline-offset: unset;
+  text-decoration-color: unset;
+}
+
+span:hover {
+  color: #36d16d;
 }
 
 * {
@@ -66,7 +85,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 80px #000;
 }
 
 nav .logo,
@@ -80,6 +99,47 @@ footer .logo a {
   margin-left: 8px;
   font-weight: bold;
   font-size: 20px;
+}
+
+.faq-txt-orange,
+.faq-txt-green,
+.faq-txt-red,
+.faq-txt {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.faq-txt-orange,
+.faq-txt-green,
+.faq-txt-red {
+  color: #fff;
+  font-weight: bold;
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px #000;
+}
+
+.faq-txt-green {
+  background-color: #02c346;
+  border: 2px solid #02c346;
+}
+
+.faq-txt-orange {
+  background-color: #e2aa03;
+  border: 2px solid #e2aa03;
+}
+
+.faq-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 22px;
+  border: 3px solid rgb(41, 45, 69);
+  box-shadow: 0 4px 6px #000;
 }
 
 nav .logo img,
@@ -288,7 +348,7 @@ h3 span {
   height: 46px;
   border-radius: 10px;
   margin-bottom: 22px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 16px #000;
 }
 
 .skills .skill-items .item .icon i {
@@ -582,6 +642,17 @@ nav ul li a {
 }
 
 @media screen and (max-width: 992px) {
+  span {
+    font-size: 14px;
+  }
+
+  .faq-img {
+    display: block;
+    margin-left: -6px;
+    margin-right: auto;
+    width: 100%;
+  }
+
   .portfolio .portfo-items .item img {
     height: 300px;
     object-position: center;
@@ -837,8 +908,7 @@ body {
   border-radius: 0.5rem;
   padding: 0.5rem;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px #000, 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   z-index: 1000;
 }
 
@@ -1039,10 +1109,9 @@ select {
 }
 
 .faq-item.active .faq-content {
-  max-height: 1000px;
+  max-height: 1000vw;
   opacity: 2;
-  padding: 4rem;
-  margin-top: -60px;
+  margin-top: -10px;
 }
 
 .faq-item button svg {
@@ -1106,6 +1175,15 @@ select {
   nav ul li a,
   .main .left button {
     font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .faq-txt-red,
+  .faq-txt-orange,
+  .faq-txt-green {
+    width: 600px;
+    margin-left: 22%;
   }
 }
 
@@ -1191,7 +1269,6 @@ select {
 }
 
 @media screen and (min-width: 992px) {
-
   .dropdown-content a {
     width: 200px;
   }
