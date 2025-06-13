@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Hosting - Imperil Hosting</title>
+    <title>Discord Bot Hosting - Imperil Hosting</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -21,9 +21,9 @@
                     <a href="#" class="dropbtn">Services <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="fivem.html">Fivem Hosting</a>
-                        <a href="discord.html">Discord Bot Hosting</a>
+                        <a href="discord.html" class="active">Discord Bot Hosting</a>
                         <a href="teamspeak.html">TeamSpeak Hosting</a>
-                        <a href="minecraft.html" class="active">Minecraft Hosting</a>
+                        <a href="minecraft.html">Minecraft Hosting</a>
                     </div>
                 </li>
                 <li><a href="team.html">Team</a></li>
@@ -41,9 +41,9 @@
     <section class="service-hero">
         <div class="container">
             <div class="service-hero-content">
-                <img src="assets/minecraft-icon.png" alt="Minecraft" class="service-icon">
-                <h1>Minecraft Server Hosting</h1>
-                <p>Build your world with our high-performance Minecraft servers</p>
+                <img src="assets/discord-icon.png" alt="Discord" class="service-icon">
+                <h1>Discord Bot Hosting</h1>
+                <p>Keep your Discord bots online 24/7 with our reliable hosting infrastructure</p>
                 <button class="btn-primary">View Plans</button>
             </div>
         </div>
@@ -51,16 +51,15 @@
 
     <section class="service-plans">
         <div class="container">
-            <h2>Minecraft Server Plans</h2>
+            <h2>Discord Bot Hosting Plans</h2>
             <div class="plans-grid">
                 <div class="plan-card">
-                    <h4>Creeper</h4>
-                    <div class="price">$4.99<span>/month</span></div>
+                    <h4>Basic Bot</h4>
+                    <div class="price">$2.99<span>/month</span></div>
                     <ul>
-                        <li>2 GB RAM</li>
-                        <li>10 GB SSD Storage</li>
-                        <li>Up to 20 Players</li>
-                        <li>Vanilla & Modded Support</li>
+                        <li>1 vCPU / 512 MB RAM</li>
+                        <li>5 GB SSD Storage</li>
+                        <li>Up to 3 Discord Bots</li>
                         <li>Basic Support</li>
                         <li>99.9% Uptime</li>
                     </ul>
@@ -68,33 +67,29 @@
                 </div>
                 <div class="plan-card popular">
                     <div class="popular-badge">Most Popular</div>
-                    <h4>Enderman</h4>
-                    <div class="price">$9.99<span>/month</span></div>
+                    <h4>Pro Bot</h4>
+                    <div class="price">$5.99<span>/month</span></div>
                     <ul>
-                        <li>4 GB RAM</li>
-                        <li>25 GB SSD Storage</li>
-                        <li>Up to 50 Players</li>
-                        <li>Vanilla & Modded Support</li>
-                        <li>Plugin Support</li>
+                        <li>2 vCPU / 1 GB RAM</li>
+                        <li>10 GB SSD Storage</li>
+                        <li>Up to 10 Discord Bots</li>
                         <li>Priority Support</li>
                         <li>99.95% Uptime</li>
-                        <li>Auto Backups</li>
+                        <li>Auto Restart</li>
                     </ul>
                     <button class="btn-primary">Select Plan</button>
                 </div>
                 <div class="plan-card">
-                    <h4>Ender Dragon</h4>
-                    <div class="price">$19.99<span>/month</span></div>
+                    <h4>Enterprise Bot</h4>
+                    <div class="price">$12.99<span>/month</span></div>
                     <ul>
-                        <li>8 GB RAM</li>
-                        <li>50 GB SSD Storage</li>
-                        <li>Up to 100 Players</li>
-                        <li>Vanilla & Modded Support</li>
-                        <li>Plugin Support</li>
+                        <li>4 vCPU / 2 GB RAM</li>
+                        <li>25 GB SSD Storage</li>
+                        <li>Unlimited Discord Bots</li>
                         <li>24/7 Premium Support</li>
                         <li>99.99% Uptime</li>
-                        <li>Auto Backups</li>
-                        <li>DDoS Protection</li>
+                        <li>Auto Restart & Monitoring</li>
+                        <li>Custom Node.js Versions</li>
                     </ul>
                     <button class="btn-primary">Select Plan</button>
                 </div>
@@ -104,27 +99,27 @@
 
     <section class="service-features">
         <div class="container">
-            <h2>Minecraft Hosting Features</h2>
+            <h2>Why Choose Our Discord Bot Hosting?</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <i class="fas fa-cube"></i>
-                    <h3>One-Click Modpacks</h3>
-                    <p>Install popular modpacks with just one click</p>
+                    <i class="fab fa-discord"></i>
+                    <h3>Discord Optimized</h3>
+                    <p>Servers specifically optimized for Discord bot performance</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-plug"></i>
-                    <h3>Plugin Support</h3>
-                    <p>Full support for Bukkit, Spigot, and Paper plugins</p>
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7 Uptime</h3>
+                    <p>Keep your bots online around the clock with automatic restarts</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-save"></i>
-                    <h3>Automatic Backups</h3>
-                    <p>Never lose your world with automated daily backups</p>
+                    <i class="fas fa-code"></i>
+                    <h3>Multiple Languages</h3>
+                    <p>Support for Node.js, Python, Java, and more</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-desktop"></i>
-                    <h3>Easy Control Panel</h3>
-                    <p>Manage your server with our intuitive control panel</p>
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Monitor your bot's performance with detailed analytics</p>
                 </div>
             </div>
         </div>
@@ -159,7 +154,7 @@
                     <ul>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Status Page</a></li>
+                        <li><a href="https://status.imperilhosting.xyz">Status Page</a></li>
                     </ul>
                 </div>
             </div>

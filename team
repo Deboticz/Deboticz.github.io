@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links - Imperil Hosting</title>
+    <title>Our Team - Imperil Hosting</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -26,8 +26,8 @@
                         <a href="minecraft.html">Minecraft Hosting</a>
                     </div>
                 </li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="links.html" class="active">Links</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="links.html">Links</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -40,31 +40,14 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Important Links</h1>
-            <p>Quick access to all our resources and social media</p>
+            <h1>Meet Our Team</h1>
+            <p>The experts behind Imperil Hosting's success</p>
         </div>
     </section>
 
-    <section class="links-section">
+    <section class="team-section">
         <div class="container">
-            <div class="links-grid">
-                <div class="links-category">
-                    <h3><i class="fas fa-share-alt"></i> Social Media</h3>
-                    <div class="links-list" id="socialLinks">
-                    </div>
-                </div>
-                
-                <div class="links-category">
-                    <h3><i class="fas fa-file-contract"></i> Legal</h3>
-                    <div class="links-list" id="legalLinks">
-                    </div>
-                </div>
-                
-                <div class="links-category">
-                    <h3><i class="fas fa-life-ring"></i> Support</h3>
-                    <div class="links-list" id="supportLinks">
-                    </div>
-                </div>
+            <div class="team-grid" id="teamGrid">
             </div>
         </div>
     </section>
@@ -98,7 +81,7 @@
                     <ul>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Status Page</a></li>
+                        <li><a href="https://status.imperilhosting.xyz">Status Page</a></li>
                     </ul>
                 </div>
             </div>
@@ -109,6 +92,6 @@
     </footer>
 
     <script src="config.js"></script>
-    <script src="links.js"></script>
+    <script src="team.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - Imperil Hosting</title>
+    <title>Links - Imperil Hosting</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,19 +16,19 @@
                 <span>Imperil Hosting</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home">Home</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Services <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="fivem.html">Fivem Hosting</a>
-                        <a href="discord.html">Discord Bot Hosting</a>
-                        <a href="teamspeak.html">TeamSpeak Hosting</a>
-                        <a href="minecraft.html">Minecraft Hosting</a>
+                        <a href="fivem">Fivem Hosting</a>
+                        <a href="discord">Discord Bot Hosting</a>
+                        <a href="teamspeak">TeamSpeak Hosting</a>
+                        <a href="minecraft">Minecraft Hosting</a>
                     </div>
                 </li>
-                <li><a href="team.html" class="active">Team</a></li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="team">Team</a></li>
+                <li><a href="links" class="active">Links</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -40,14 +40,31 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Meet Our Team</h1>
-            <p>The experts behind Imperil Hosting's success</p>
+            <h1>Important Links</h1>
+            <p>Quick access to all our resources and social media</p>
         </div>
     </section>
 
-    <section class="team-section">
+    <section class="links-section">
         <div class="container">
-            <div class="team-grid" id="teamGrid">
+            <div class="links-grid">
+                <div class="links-category">
+                    <h3><i class="fas fa-share-alt"></i> Social Media</h3>
+                    <div class="links-list" id="socialLinks">
+                    </div>
+                </div>
+                
+                <div class="links-category">
+                    <h3><i class="fas fa-file-contract"></i> Legal</h3>
+                    <div class="links-list" id="legalLinks">
+                    </div>
+                </div>
+                
+                <div class="links-category">
+                    <h3><i class="fas fa-life-ring"></i> Support</h3>
+                    <div class="links-list" id="supportLinks">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -62,18 +79,18 @@
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="fivem.html">Fivem Hosting</a></li>
-                        <li><a href="discord.html">Discord Bot Hosting</a></li>
-                        <li><a href="teamspeak.html">TeamSpeak Hosting</a></li>
-                        <li><a href="minecraft.html">Minecraft Hosting</a></li>
+                        <li><a href="fivem">Fivem Hosting</a></li>
+                        <li><a href="discord">Discord Bot Hosting</a></li>
+                        <li><a href="teamspeak">TeamSpeak Hosting</a></li>
+                        <li><a href="minecraft">Minecraft Hosting</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="links.html">Links</a></li>
+                        <li><a href="team">Team</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <li><a href="links">Links</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -81,7 +98,7 @@
                     <ul>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Status Page</a></li>
+                        <li><a href="https://status.imperilhosting.xyz">Status Page</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,6 +109,6 @@
     </footer>
 
     <script src="config.js"></script>
-    <script src="team.js"></script>
+    <script src="links.js"></script>
 </body>
 </html>
