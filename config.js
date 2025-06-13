@@ -1,7 +1,7 @@
 const config = {
     company: {
       name: "Imperial Hosting",
-      tagline: "Premium Game Server Hosting",
+      tagline: "Game Server Hosting",
       foundedYear: "2025",
       logo: "assets/logo.png"
     },
