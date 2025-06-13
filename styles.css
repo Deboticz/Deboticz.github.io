@@ -3249,5 +3249,37 @@ img {
     scroll-behavior: smooth;
 }
 
-/* End of styles */
+.modal.discount-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 
+.discount-code input {
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.discount-code button {
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.discount-code button:hover {
+    background: #0056b3;
+}
+
+/* End of styles */
