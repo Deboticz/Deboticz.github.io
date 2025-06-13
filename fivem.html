@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FiveM Server Hosting - Imperil Hosting</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Imperil Hosting" class="logo" />
+                <span>Imperil Hosting</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="fivem.html" class="active">FiveM Hosting</a>
+                        <a href="discord.html">Discord Bot Hosting</a>
+                        <a href="teamspeak.html">TeamSpeak Hosting</a>
+                        <a href="minecraft.html">Minecraft Hosting</a>
+                    </div>
+                </li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <img src="assets/fivem-icon.png" alt="FiveM" class="service-icon" />
+                <h1>FiveM Server Hosting</h1>
+                <p>Reliable and scalable server hosting optimized for your FiveM projects</p>
+                <!-- Optional: You can add a button here if needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="service-plans">
+        <div class="container">
+            <h2>FiveM Server Hosting Plans</h2>
+
+            <div class="tier-section">
+                <h3>Developer Tier</h3>
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <h4>Nano Core</h4>
+                        <div class="price">$3.00<span>/month</span></div>
+                        <ul>
+                            <li>1 vCPU / 1 GB RAM / 5 GB SSD</li>
+                            <li>Minimal resource dev/testing environment</li>
+                            <li>File and panel access</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h4>Micro Core</h4>
+                        <div class="price">$6.00<span>/month</span></div>
+                        <ul>
+                            <li>2 vCPU / 2 GB RAM / 10 GB SSD</li>
+                            <li>Ideal for basic FXServer builds and training servers</li>
+                            <li>FTP + Panel Access</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h4>Starter Studio</h4>
+                        <div class="price">$8.00<span>/month</span></div>
+                        <ul>
+                            <li>2 vCPU / 3 GB RAM / 15 GB SSD</li>
+                            <li>Great for solo projects and small script testing</li>
+                            <li>FXServer Ready Environment</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tier-section">
+                <h3>Community Tier</h3>
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <h4>Essential Node</h4>
+                        <div class="price">$10.00<span>/month</span></div>
+                        <ul>
+                            <li>3 vCPU / 4 GB RAM / 20 GB SSD</li>
+                            <li>Supports QBCore/ESX with low concurrency</li>
+                            <li>Resource Monitoring + Scheduled Backups</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h4>Community Grid</h4>
+                        <div class="price">$14.00<span>/month</span></div>
+                        <ul>
+                            <li>4 vCPU / 6 GB RAM / 30 GB SSD</li>
+                            <li>Stable for up to 30 concurrent players</li>
+                            <li>MySQL Database Ready</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                    <div class="plan-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <h4>Stable Core</h4>
+                        <div class="price">$18.00<span>/month</span></div>
+                        <ul>
+                            <li>5 vCPU / 8 GB RAM / 40 GB SSD</li>
+                            <li>Recommended for balanced public RP servers</li>
+                            <li>Premium Panel Tools + Logs</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tier-section">
+                <h3>Advanced Tier</h3>
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <h4>Ops Center</h4>
+                        <div class="price">$22.00<span>/month</span></div>
+                        <ul>
+                            <li>6 vCPU / 10 GB RAM / 50 GB SSD</li>
+                            <li>Full framework support with consistent player base</li>
+                            <li>Anti-Cheat & Firewall Optional Add-ons</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h4>Fleet Node</h4>
+                        <div class="price">$28.00<span>/month</span></div>
+                        <ul>
+                            <li>8 vCPU / 12 GB RAM / 60 GB SSD</li>
+                            <li>Optimized for mod-heavy environments</li>
+                            <li>Custom Port Support + Dedicated IP</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h4>Director Hub</h4>
+                        <div class="price">$35.00<span>/month</span></div>
+                        <ul>
+                            <li>10 vCPU / 16 GB RAM / 75 GB SSD</li>
+                            <li>High-traffic RP server solution</li>
+                            <li>Enhanced DDoS Protection + Prioritized Support</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tier-section">
+                <h3>Enterprise Tier</h3>
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <h4>Command Unit</h4>
+                        <div class="price">$45.00<span>/month</span></div>
+                        <ul>
+                            <li>12 vCPU / 24 GB RAM / 100 GB SSD</li>
+                            <li>Scales for multi-framework environments or dev/test split</li>
+                            <li>Advanced Analytics + Full Root Access</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h4>Enterprise Core</h4>
+                        <div class="price">$60.00<span>/month</span></div>
+                        <ul>
+                            <li>16 vCPU / 32 GB RAM / 150 GB SSD</li>
+                            <li>Built for large public communities or server networks</li>
+                            <li>Isolated Container Setup</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                    <div class="plan-card premium">
+                        <div class="premium-badge">Ultimate</div>
+                        <h4>Infinity Grid</h4>
+                        <div class="price">$85.00<span>/month</span></div>
+                        <ul>
+                            <li>20 vCPU / 48 GB RAM / 200 GB SSD</li>
+                            <li>Ultimate performance for franchise-level projects</li>
+                            <li>Full Customization, Auto-Scaling Available</li>
+                        </ul>
+                        <button class="btn-primary">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-plan">
+                <h3>Custom Plan Available</h3>
+                <p>Need special specs, a hybrid setup, or isolated deployment? Contact us directly for a tailored hosting plan.</p>
+                <button class="btn-secondary">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-features">
+        <div class="container">
+            <h2>Why Choose Our FiveM Hosting?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Optimized Servers</h3>
+                    <p>High-performance servers built specifically for FiveM gameplay.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Reliable Security</h3>
+                    <p>Robust anti-DDoS protection and firewall options for safety.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Full Control</h3>
+                    <p>Access FTP, control panels, and advanced monitoring tools.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Premium Support</h3>
+                    <p>24/7 expert support to keep your server running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/logo.png" alt="Imperil Hosting" class="footer-logo" />
+                    <p>Premium game server hosting solutions for communities worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="fivem.html">Fivem Hosting</a></li>
+                        <li><a href="discord.html">Discord Bot Hosting</a></li>
+                        <li><a href="teamspeak.html">TeamSpeak Hosting</a></li>
+                        <li><a href="minecraft.html">Minecraft Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="links.html">Links</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Status Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Imperil Hosting - Made In 2025 © All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

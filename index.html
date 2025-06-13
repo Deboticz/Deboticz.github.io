@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperil Hosting - Premium Game Server Hosting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Imperil Hosting" class="logo">
+                <span>Imperil Hosting</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="fivem.html">Fivem Hosting</a>
+                        <a href="discord.html">Discord Bot Hosting</a>
+                        <a href="teamspeak.html">TeamSpeak Hosting</a>
+                        <a href="minecraft.html">Minecraft Hosting</a>
+                    </div>
+                </li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Game Server Hosting</h1>
+            <p>Experience unparalleled performance with our cutting-edge hosting solutions</p>
+            <div class="hero-buttons">
+                <button class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/logo.png" alt="Server Infrastructure">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Imperil Hosting?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Lightning Fast</h3>
+                    <p>High-performance SSD storage and premium network infrastructure</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>DDoS Protection</h3>
+                    <p>Advanced security measures to keep your server online 24/7</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Expert technical support available around the clock</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Full Control</h3>
+                    <p>Complete access to your server with root privileges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" onclick="location.href='fivem.html'">
+                    <img src="assets/fivem-icon.png" alt="FiveM">
+                    <h3>FiveM Hosting</h3>
+                    <p>Optimized servers for your FiveM roleplay community</p>
+                </div>
+                <div class="service-card" onclick="location.href='discord.html'">
+                    <img src="assets/discord-icon.png" alt="Discord">
+                    <h3>Discord Bot Hosting</h3>
+                    <p>Reliable hosting for your Discord bots</p>
+                </div>
+                <div class="service-card" onclick="location.href='teamspeak.html'">
+                    <img src="assets/teamspeak-icon.png" alt="TeamSpeak">
+                    <h3>TeamSpeak Hosting</h3>
+                    <p>Crystal clear voice communication servers</p>
+                </div>
+                <div class="service-card" onclick="location.href='minecraft.html'">
+                    <img src="assets/minecraft-icon.png" alt="Minecraft">
+                    <h3>Minecraft Hosting</h3>
+                    <p>High-performance Minecraft server hosting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="discountModal" class="modal discount-modal">
+        <div class="modal-content discount-content">
+            <span class="close discount-close">&times;</span>
+            <div class="discount-header">
+                <i class="fas fa-gift"></i>
+                <h2>Welcome to Imperil Hosting!</h2>
+            </div>
+            <div class="discount-body">
+                <h3>Get 15% OFF Your First Order!</h3>
+                <p>Use code <strong>BUBBLES</strong> at checkout</p>
+                <div class="discount-code">
+                    <input type="text" value="BUBBLES" readonly id="discountCode">
+                    <button onclick="copyDiscountCode()">Copy</button>
+                </div>
+                <button class="btn-primary" onclick="closeDiscountModal()">Claim Discount</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/logo.png" alt="Imperil Hosting" class="footer-logo">
+                    <p>Premium game server hosting solutions for communities worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="fivem.html">Fivem Hosting</a></li>
+                        <li><a href="discord.html">Discord Bot Hosting</a></li>
+                        <li><a href="teamspeak.html">TeamSpeak Hosting</a></li>
+                        <li><a href="minecraft.html">Minecraft Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="links.html">Links</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Status Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Imperil Hosting - Made In 2025 © All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
